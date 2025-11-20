@@ -1,0 +1,20 @@
+[build-system]
+requires = [\"setuptools>=68.0.0\", \"wheel\"]
+build-backend = \"setuptools.build_meta\"
+
+[project]
+name = \"meine-freund-backend\"
+version = \"0.1.0\"
+description = \"FastAPI backend for Meine Freund\"
+authors = [{ name = \"Meine Freund Team\" }]
+readme = \"../README.md\"
+requires-python = \">=3.11\"
+dependencies = [
+    \"fastapi>=0.99,<0.100\",
+    \"uvicorn[standard]>=0.23,<0.24\",
+    \"pydantic>=1.10,<2.0\"
+]
+
+[tool.pip-tools]
+generate-hashes = false
+strip-extras = true
